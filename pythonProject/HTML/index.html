@@ -8,8 +8,11 @@
   <link href="style.css" rel="stylesheet" />
   <body>
     <header>
-      <h1>Fact Today!!</h1>
-      <img src="logo.png" height="68" width="70" alt="Fact Today Logo" />
+      <div class="logo"> 
+        <img src="logo.png" height="68" width="70" alt="Fact Today Logo" />
+        <h1>Fact Today!!</h1>
+      <button>Post</button>
+      </div>
     </header>
     <form>
       <input type="text" placeholder="Enter the fact with World..." />
@@ -26,7 +29,6 @@
         <option value="History">History</option>
         <option value="News">News</option>
       </select>
-      <button>Post</button>
     </form>
     <main>
       <aside>
@@ -45,22 +47,24 @@
       <section>
         <ul>
           <li>
-            <p>Hi!!<span>#technology</span></p>
+            <p class="fact">Hi!! #technology</p>
             <a href="https://www.openstack.org/" target="_blank">{source}</a>
-            <div>
+            <span>
               <button>̣👍<b>24</b></button>
               <button>̣❤️<b>21</b></button>
               <button>👌<b>0</b></button>
-            </div>
+            <span>
+              <p class="tag">#technology</p>
           </li>
           <li>
-            <p>Tech World</p>
+            <p class="fact">Science World</p>
             <a href="https://www.google.org/" target="_blank">{source}</a>
-            <div>
+            <span>
               <button>̣👍<b>2</b></button>
               <button>̣❤️<b>51</b></button>
               <button>👌<b>2</b></button>
-            </div>
+            </span>
+            <p class="tag">#science</p>
           </li>
         </ul>
       </section>
