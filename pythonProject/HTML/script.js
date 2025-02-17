@@ -10,4 +10,6 @@ btn.addEventListener("click", function () {
     btn.textContent = "Share";
   }
 });
-console.log(btn);
+formlist = document.querySelector(".fact-list");
+console.dir(formlist);
+formlist.innerHTML = "";
